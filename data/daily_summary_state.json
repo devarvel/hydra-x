@@ -1,0 +1,13 @@
+{
+  "balance": 10000.0,
+  "equity": 10000.0,
+  "drawdown_pct": 0.0,
+  "daily_pnl": 0.0,
+  "margin_used_pct": 0.0,
+  "margin_ratio_pct": 0.0,
+  "status": "UNKNOWN",
+  "consecutive_losses": 0,
+  "daily_trade_count": 0,
+  "shutdown_reason": "",
+  "last_update": "2025-11-29T19:13:29.632558"
+}

@@ -1,0 +1,41 @@
+{
+  "tests_passed": 6,
+  "tests_failed": 1,
+  "test_results": [
+    {
+      "test": "State Reader Initialization",
+      "status": "PASS",
+      "message": "DashboardStateReader initialized successfully"
+    },
+    {
+      "test": "Account Metrics Reading",
+      "status": "PASS",
+      "message": "Account metrics read and parsed correctly"
+    },
+    {
+      "test": "Open Positions Reading",
+      "status": "PASS",
+      "message": "Open positions read and parsed correctly"
+    },
+    {
+      "test": "Trade History Reading",
+      "status": "PASS",
+      "message": "Trade history read and parsed correctly"
+    },
+    {
+      "test": "Bot Status Reading",
+      "status": "PASS",
+      "message": "Bot status read correctly"
+    },
+    {
+      "test": "Error Handling - Missing Files",
+      "status": "FAIL",
+      "message": "Should mark unavailable when file missing"
+    },
+    {
+      "test": "Error Handling - Corrupted JSON",
+      "status": "PASS",
+      "message": "Gracefully handles corrupted JSON files"
+    }
+  ]
+}

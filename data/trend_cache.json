@@ -1,0 +1,12 @@
+{
+  "BTCUSDT": {
+    "trend": "RANGING",
+    "ema50": 0,
+    "ema200": 0
+  },
+  "XAUTUSDT": {
+    "trend": "RANGING",
+    "ema50": 0,
+    "ema200": 0
+  }
+}

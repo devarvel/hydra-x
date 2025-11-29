@@ -1,0 +1,89 @@
+exchange: bybit
+symbols:
+  - BTCUSDT
+  - XAUTUSDT
+
+timeframes:
+  - M5
+  - M15
+  - H1
+
+dashboard:
+  enabled: true
+  port: 8501
+  refresh_rate: 1
+  max_refresh_rate: 5
+  min_refresh_rate: 0.5
+  history_limit: 50
+  update_timeout: 30
+  show_placeholder_data: true
+
+risk_management:
+  risk_percent: 1.75
+  min_confirmations: 2
+  max_spread_points: 50
+  max_daily_loss: 5.0
+  max_daily_trades: 4
+  max_consecutive_losses: 2
+  slippage_limit: 0.05
+
+trading:
+  tp1_multiplier: 1.5
+  tp2_multiplier: 2.5
+  min_sl_distance: 20
+  tp1_close_percent: 30
+  tp2_close_percent: 40
+  runner_close_percent: 30
+  atr_spike_threshold: 1.5
+  breakout_body_threshold: 0.6
+  opposite_wick_threshold: 0.25
+  compression_min_candles: 20
+  compression_max_candles: 40
+  ema_near_threshold: 0.005
+
+execution:
+  min_delay_seconds: 0.5
+  max_delay_seconds: 3.5
+  lot_variance_percent: 3.0
+  tp_sl_variance_percent: 1.5
+  partial_close_min_percent: 28
+  partial_close_max_percent: 42
+  retry_attempts: 3
+  retry_backoff_factor: 2.0
+  limit_order_percent: 70
+
+telegram:
+  enabled: false
+  token: "8586134645:AAEUOrLg9XD-VaSCKNHouPBfThOlcuHpq-M"
+  chat_id: "6937252077"
+
+logging:
+  level: INFO
+  log_dir: logs
+  max_log_files: 7
+  console_enabled: true
+
+api:
+  api_key: ""
+  api_secret: ""
+  passphrase: ""
+  testnet: true
+  backtest_mode: false
+
+session:
+  xau_london_start: "08:00"
+  xau_london_end: "17:00"
+  xau_ny_start: "12:00"
+  xau_ny_end: "21:00"
+  btc_trading_24h: true
+  skip_weekends: true
+  weekend_start_utc: "20:00"
+  weekend_end_utc: "20:00"
+  timezone: UTC
+
+data_streaming:
+  websocket_enabled: true
+  polling_interval: 2
+  candle_cache_size: 500
+  reconnect_max_delay: 60
+  validation_enabled: true
